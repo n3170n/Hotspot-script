@@ -1,14 +1,27 @@
 # Hotspot-script
 
-Один из возможных способов развернуть свой хот-спот практически минимальным количеством ресурсов. 
-Необходимый стек: 
+One of the possible methods to deploy your hotspot with minimal resource usage. 
+Required stack: 
 - hostapd
 - dnsmasq
 - iptables
 
-Для простого запуска без настройки достаточно выполнить ряд команд: 
+To start without configuration, simply execute a series of commands:
 ```
-git clone
+git clone https://github.com/n3170n/Hotspot-script.git
+cd Hotspot-script
+./hotspot.sh
 ```
 
-# Присутствует возможность настройки: 
+To terminate the hotspot, press ctrl+C, and the application will automatically begin the configuration rollback process.
+
+## Configuration options available: 
+- **hostapd.conf**
+  - Hotspot name configuration
+  - Hotspot password
+  - and more.
+- **dnsmasq.conf**
+  - DHCP address pool configuration
+  - Setting DNS address
+- **hotspot.sh**
+  - Configuration of necessary interfaces
