@@ -6,11 +6,12 @@ Required stack:
 - dnsmasq
 - iptables
 
-To start without configuration, simply execute a series of commands:
+To start without configuration, simply execute a series of commands (with sudo only):
 ```
 git clone https://github.com/n3170n/Hotspot-script.git
 cd Hotspot-script
-./hotspot.sh
+sudo chmod +x hotspot.sh
+sudo ./hotspot.sh
 ```
 
 To terminate the hotspot, press ctrl+C, and the application will automatically begin the configuration rollback process.
