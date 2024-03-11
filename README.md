@@ -19,7 +19,6 @@ To terminate the hotspot, press ctrl+C, and the application will automatically b
 - **hostapd.conf**
   - Hotspot name configuration
   - Hotspot password
-  - and more.
 - **dnsmasq.conf**
   - DHCP address pool configuration
   - Setting DNS address
